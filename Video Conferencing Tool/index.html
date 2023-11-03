@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Conferencing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/vdoimg1.avif" type=" image/avif">
+    <!--Boxicons Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="video">
+            <!--Header Start-->
+            <header>
+                <a href="#" class="logo">VideoC</a>
+                <div class="info">
+                    <div>
+                        <h4>Video Conferencing Meeting </h4>
+                        <p>UI Design</p>
+                    </div>
+                    <div class="icons">
+                        <a href="#"> <i class="bi bi-gear"></i></a>
+                        <a href="#"><i class="bi bi-three-dots"></i></a>
+                    </div>
+
+                </div>
+            </header>
+            <!--Header End-->
+            <!--VideoBx Start-->
+            <div class="videoBx">
+                <div class="img">
+                    <img src="vdoimg1.avif" class="user">
+                    <div class="imgBx">
+                       
+                        <img src="vdoimg2.jpg">
+                        <img src="vdoimg3.jpg">
+                        <img src="vdoimg4.jpg">
+                        <img src="vdoimg5.jpg">
+                    </div>
+
+                </div>
+            </div>
+            <!--VideoBx End-->
+            <div class="btns">
+                <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="mic-outline"></ion-icon></a>
+                <a href="#" class="red"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="share-outline"></ion-icon></a>
+                <a href="#" ><ion-icon name="chatbubble-outline" id="chat"></ion-icon></a>
+            </div>
+           
+        </div>
+    </div>
+    <div class="chat">
+        <h4>View messages</h4>
+        <div class="chating">
+            <div class="messages">
+                <img src="vdoimg2.jpg">
+                <div>
+                    <h5>Anna</h5>
+                    <p>Please send me project code</p>
+                </div>
+            </div>
+            <div class="messages">
+                <img src="vdoimg3.jpg">
+                <div>
+                    <h5>Marco</h5>
+                    <p>Ihave already it on</p>
+                </div>
+            </div>
+            <div class="messages">
+                <img src="vdoimg4.jpg">
+                <div>
+                    <h5>John</h5>
+                    <p>Hello sir!...</p>
+                </div>
+            </div>
+            <div class="messages">
+                <img src="vdoimg5.jpg">
+                <div>
+                    <h5>Jashlin</h5>
+                    <p>Please send me project code</p>
+                </div>
+            </div>
+        </div>
+        <div class="send">
+            <a href="#"><ion-icon name="attach-outline"></ion-icon></a>
+            <input type="text" placeholder="Wite your message">
+            <a href="#" class="btn"><ion-icon name="send-outline"></ion-icon></a>
+        </div>
+    </div>
+  
+    <script>
+        let chat = document.querySelector("#chat");
+        let chatBox = document.querySelector(".chat");
+        const bodypad = document.body;
+
+        chat.onclick = () =>{
+            chatBox.classList.toggle('active');
+            bodypad.classList.toggle('active');
+        }
+    </script>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
